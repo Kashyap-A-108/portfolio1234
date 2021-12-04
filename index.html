@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+
+<style id="webmakerstyle">
+html {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100vw;
+  height: 30px;
+  position: scroll;
+  border-bottom: 1px solid green;
+  backgroundcolor: red;
+}
+
+nav {
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  overflow: hidden;
+  text-align: center;
+}
+.nav-link {
+  text-transform: upper-case;
+  color: black;
+  text-align: center;
+  font: 20px sans-serif;
+  padding: 5px;
+  overflow: hidden;
+}
+.nav-link:hover {
+  background-color: turquoise;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: #52ab98;
+  padding: 10px;
+  margin: 0;
+}
+h1 {
+  font-size: 20pt;
+  color: orange;
+  text-align: center;
+}
+h1 span {
+  border: 1px solid orangered;
+  padding: 5px;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+.img-circle {
+  border: 3px solid lightseagreen;
+  border-radius: 50%;
+  align-content: center;
+  background-color: #318ce7;
+}
+
+.section1 {
+  background-color: #e7feff;
+  padding: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.section2 {
+  background-color: #c8d8e4;
+  padding: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.section3 {
+  background-color: #6699cc;
+  padding: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.section4 {
+  background-color: #add8e6;
+  padding: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.section5 {
+  background-color: #008e97;
+  padding: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.section6 {
+  background-color: #0c2340;
+  padding: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#header img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+#header img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+.section {
+  background-color: ;
+  padding: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+#header img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+#header p {
+  font-size: 25pt;
+  color: orange;
+  padding-top: 5px;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.selected {
+  background-color: #f36f48;
+  font-weight: bold;
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery-item {
+  flex: 1 0 24rem;
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.gallery-image {
+  display: block;
+  width: 50%;
+  height: 50%;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+.gallery-image:hover {
+  transform: scale(1.15);
+}
+
+li {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+progress {
+  width: 70%;
+  height: 20px;
+  color: orange;
+  background: #000;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background: #f36f48;
+}
+
+form {
+  text-align: center;
+  margin-top: 0;
+}
+.submit {
+  background-color: orange;
+  padding: 12px 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  margin: 0;
+  font-weight: bold;
+}
+.submit:hover {
+  background-color: black;
+}
+textarea {
+  background-color: lightsteelblue;
+  height: 50px;
+}
+input,
+textarea {
+  margin-bottom: 10px;
+  font-size: 11pt;
+  padding: 15px 10px 10px;
+  border: 1px solid #cecece;
+  color: #787575;
+  background-color: lightseagreen;
+  border-radius: 5px;
+  width: 50%;
+  outline: none;
+}
+
+#contacts img {
+  height: 50px;
+  width: 50px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+#contacts a {
+  text-decoration: none;
+}
+#contacts img:hover {
+  opacity: 0.5;
+}
+#contacts {
+  text-align: center;
+}
+.copyright {
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+<html>
+	<head>
+		<title> My Personal Portfolio </title>
+	</head>
+	<body>
+		<header>
+		<nav id="navbar">
+			<a href="#" class="nav-link">About Me </a>
+			<a href="#skills" class="nav-link">Skills </a>
+			<a href="#contact" class="nav-link">Contact Me </a>
+			<a href="#work" class="nav-link">My Project </a>
+		</nav>
+		</header>
+		<br>
+	<div id="header" class="section1">
+		<img class="img-circle" src="https://brillcool.com/pub/media/testimonial/u/s/user.png" width="50">
+	</div>
+	<br>
+	<div class="section2">
+		<h1 id=#><span> About Me </span></h1>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+		</div>
+		<br>
+		<div class="section3">
+			<h1 id=work>My Projects</h1>
+			<div class="gallery-item">
+			<img class="gallery-image" src="https://images.unsplash.com/photo-1548003671-5361469aaebe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+				</img>
+	</div>
+	<div class="gallery-item">
+		<img class="gallery-image" src="https://images.unsplash.com/photo-1548195667-1d329af0a472?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=627&q=80" width="300">
+		</img>
+			</div>
+			<div class="gallery-item">
+				<img class="gallery-image" src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+				</img>
+			</div>
+
+			<div class="gallery-item">
+				<img class="gallery-image" src="https://images.unsplash.com/photo-1462007895615-c8c073bebcd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mzd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+				</img>
+			</div>
+
+			<div class="gallery-item">
+				<img class="gallery-image" src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+				</img>
+			</div>
+			<div class="gallery-item">
+				<img class="gallery-image" src="https://images.unsplash.com/photo-1503642551022-c011aafb3c88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+				</img>
+			</div>
+		</div>
+		<br>
+		<div class="section4">
+			<h1 id="skills"><span> My Skills </span> </h1>
+			
+			<ul>
+				<li> HTML <br>
+					<progress min="0" max="100" value="80"></progress>
+				</li>
+				
+				<li> CSS <br>
+					<progress min="0" max="100" value="90"></progress>
+				</li>
+				
+				<li> C++ <br>
+					<progress min="0" max="100" value="40"></progress>
+				</li>					
+			</ul>
+		</div>		
+		<br>
+		<div class="section5">
+			<h1 id="contact"><span> Contact Me </span></h1>
+			<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+				<input name="name" placeholder="Name" type="text" required /> 
+				<br>
+				<input name="email" placeholder="Email" type="email" required />
+				<br>
+				<textarea name="message" placeholder="Message" required> </textarea>
+				<br>
+				<input type="submit" value="SEND" class="submit" />
+			</form>
+		</div>
+		<br>
+		<div class="section6" id="contacts">
+			<h1><span>Follow Me</span></h1>
+			<div>
+				<a href="https://facebook.com/">
+					<img alt="Facebook" src="https://sololearn.com/Uploads/icons/facebook.png">
+					</img>
+				</a>
+			<a href="https://twitter.com/">
+				<img alt="Twitter" src="https://sololearn.com/Uploads/icons/twitter.png">
+			</a>
+			</div>
+		</div>
+<br>
+		<div class="copyright">
+			&copy; 2021 A sincere web developer. All rights reserved.
+</div>
+			
+	</body>
+</html>
+
+<script src="filesystem:https://webmaker.app/temporary/script.js">
+</script>
+</body>
+</html>
